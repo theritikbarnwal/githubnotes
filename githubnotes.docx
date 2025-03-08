@@ -1,0 +1,86 @@
+Install Git:
+"https://git-scm.com/downloads"
+
+Check if Git is Installed: 
+git --version
+
+Configure Git (Set User & Email):
+git config --global user.name "your_name" #set name
+git config -- global user.email "your_email" #set email 
+
+Verify Configurations:
+git config --list #view all GIT CONFIGURATION 
+
+Initialize & Clone:
+git init # initialize a new git repo
+git clone <repo-url> #clone a repo
+
+Check Repository Status:
+git status
+
+Add Files to Staging Area:
+git add file_name #add a specific file 
+git add . #add all the files for the current initialize folder
+
+Commit changes:
+git commit -m "commit_message"
+
+View Commit History:
+git log
+git log --online #Shorter version
+
+Branching & Merging:
+Create a New Branch:
+git branch branch-name
+
+Switch to a Branch:
+git checkout branch-name
+git switch branch-name   # Alternative to checkout
+
+Create & Switch to a New Branch:
+git checkout -b branch-name
+
+Merge a Branch:
+git checkout main
+git merge branch-name
+
+Delete a Branch:
+git branch -d branch-name
+
+Working with GitHub:
+git remote add origin https://github.com/your-username/repo-name.git
+
+Check Remote URL:
+git remote -v
+
+Push Changes to GitHub:
+git push -u origin main
+
+Pull Latest Changes from GitHub:
+git pull origin main
+
+
+
+🎗️ DEMO::
+git init
+git add . 
+git commit -m "initial commit"
+
+Create a GitHub Repository
+1️⃣ Go to GitHub and click New Repository
+2️⃣ Name it (e.g., githubnotes)
+3️⃣ DO NOT initialize it with a README.md (we already have one)
+4️⃣ Click Create Repository
+5️⃣ Copy the repository URL (HTTPS or SSH).
+
+git branch -M main
+git remote add origin https://github.com/theritikbarnwal/githubnotes.git
+git remote -v
+git push -u origin main
+
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 300 bytes | 300.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0)
+To https://github.com/theritikbarnwal/githubnotes.git
+ * [new branch]      main -> main
