@@ -59,7 +59,7 @@ git push -u origin main
 Pull Latest Changes from GitHub:
 git pull origin main
 
-
+----------------------------------------------------
 
 🎗️ DEMO::
 git init
@@ -84,3 +84,19 @@ Writing objects: 100% (1/1), 300 bytes | 300.00 KiB/s, done.
 Total 1 (delta 0), reused 0 (delta 0)
 To https://github.com/theritikbarnwal/githubnotes.git
  * [new branch]      main -> main
+
+----------------------------------------------------
+
+
+
+
+Git Shortcuts (Aliases):
+git config --global alias.s status
+git config --global alias.c "commit -m"
+git config --global alias.co checkout
+git config --global alias.l "log --oneline --graph --decorate --all"
+
+uses:
+git s   # Instead of git status
+git c "Updated file"  # Instead of git commit -m "Updated file"
+git l   # Better log visualization
