@@ -59,6 +59,9 @@ git push -u origin main
 Pull Latest Changes from GitHub:
 git pull origin main
 
+To remove the files from the repo
+git rm -r --cached filename
+git commit -m "file removed"
 ----------------------------------------------------
 
 🎗️ DEMO::
